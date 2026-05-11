@@ -8,15 +8,15 @@ function addTask() {
 
   const span = document.createElement('span');
   span.textContent = value;
-  const newList = document.createElement('li');
+  const newListItem = document.createElement('li');
 
   const deleteBtn = document.createElement('button');
   deleteBtn.textContent = 'X';
   deleteBtn.classList.add('delete-btn');
 
-  newList.appendChild(span);
-  newList.appendChild(deleteBtn);
-  ul.appendChild(newList);
+  newListItem.appendChild(span);
+  newListItem.appendChild(deleteBtn);
+  ul.appendChild(newListItem);
 
   input.value = '';
 }
